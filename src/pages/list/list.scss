@@ -1,0 +1,58 @@
+page-list {
+  ion-content {
+    height: 100%;
+  }
+  .button-not{
+    text-decoration: none;
+    padding: 10px;
+    font-weight: 600;
+    font-size: 20px;
+    color: #ffffff;
+    border-radius: 6px;
+    border: 1px solid black;
+}
+.background{
+    background-color: white;
+    border: 1px solid black;
+}
+ion-col.col{
+    border: 1px solid black;
+}
+.button-add{
+    text-decoration: none;
+    padding: 10px;
+    font-weight: 600;
+    font-size: 20px;
+    color: #ffffff;
+    width: 100%;
+    height: 20%;
+    border-radius: 6px;
+    border: 1px solid black;
+}
+.button-files{
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 20px;
+    color: #ffffff;
+    width: 100%;
+    height: 20%;
+    border-radius: 6px;
+    border: 1px solid black;
+}
+.ion-img{
+    width: 80%;
+    height: 60%;
+    padding: auto;
+    padding-left: 15%;
+}
+.grid{
+    padding-bottom: 5%;
+}
+.pform{
+    font-style:serif;
+    position: center;
+    text-align: center;
+    font-weight: bold;
+    font-size: 16px;
+}
+}

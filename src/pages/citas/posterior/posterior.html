@@ -1,0 +1,29 @@
+<ion-header>
+
+  <ion-navbar color="secondary">
+    <ion-title>
+      <p class="pform">Citas Futuras</p>
+    </ion-title>
+  </ion-navbar>
+    
+</ion-header>
+
+<ion-content padding>
+  <ion-list>
+    <ion-item *ngFor="let cita of citasPosteriores; let i = index;">
+      <ion-label>
+        <p color="light">
+          <span ion-text text-left tappable>
+            {{cita.numero + 1}}
+          </span>
+          <span ion-text text-right tappable>
+            dentro de {{(cita.fechaprogramada - fechaHoy)/86400000 | number: '1.0-0'}} dias
+          </span>
+        </p>
+        <p color="dark">
+          {{cita.fechaprogramada | date}}
+        </p>
+      </ion-label>
+    </ion-item>
+  </ion-list>
+</ion-content>

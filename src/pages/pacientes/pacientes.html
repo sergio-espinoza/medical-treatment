@@ -1,0 +1,43 @@
+
+  <ion-tabs color="tabbar">
+    <ion-tab 
+      [root]="espera" 
+      tabIcon="trending-up" 
+      tabTitle="Espera"
+      tabBadge="{{countPacientesEspera}}"
+      tabBadgeStyle="success">
+    </ion-tab>
+
+    <ion-tab 
+      [root]="retraso" 
+      tabIcon="cog" 
+      tabTitle="Retraso"
+      tabBadge="{{countPacientesRetraso}}"
+      tabBadgeStyle="danger">
+    </ion-tab>
+
+    <ion-fab center bottom>
+      <button ion-fab (click)="goToRegistroPaciente()">Agregar</button>
+    </ion-fab>
+    <ion-tab></ion-tab>
+
+    <ion-tab 
+      [root]="personal" 
+      tabIcon="home" 
+      tabTitle="Personal"
+      tabBadge="{{countPacientesPersonal}}"
+      tabBadgeStyle="primary">
+    </ion-tab>
+
+    <ion-tab 
+      [root]="general" 
+      tabIcon="contacts" 
+      tabTitle="General"
+      tabBadge="{{countPacientesGeneral}}"
+      tabBadgeStyle="secondary">
+    </ion-tab>
+  
+  </ion-tabs>
+
+
+
